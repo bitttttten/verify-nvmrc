@@ -11,13 +11,13 @@ npx verify-nvmrc
 # Node version is correct
 ```
 
-#### Supported FLAGS
+## Options
 
-- `-e`, `--emoji`
+- `-e, --emoji`
 
 Supports emojis.
 
-- `-v`, `--verbose`
+- `-v, --verbose`
 
 Logs out where it found the nvmrc file, if one is present. And logs out current node version.
 
