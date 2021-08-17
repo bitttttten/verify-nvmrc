@@ -1,6 +1,6 @@
 {
   "name": "verify-nvmrc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Finds the closest .nvmrc file and checks the currently loaded node version against that.",
   "bin": "cli.mjs",
   "main": "cli.mjs",
