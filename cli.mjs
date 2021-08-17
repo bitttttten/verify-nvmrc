@@ -58,7 +58,7 @@ async function main() {
     if (closestNvmrcFile !== "unknown") {
       log(
         supportEmojis && "ℹ️",
-        `Found .nvmrc file with ${closestNvmrcFile?.version} at ${closestNvmrcFile?.path}`
+        `Found .nvmrc file with ${closestNvmrcFile.version} at ${closestNvmrcFile.path}`
       );
     }
   }
@@ -72,7 +72,7 @@ async function main() {
     return;
   }
 
-  if (currentNodeVersion !== closestNvmrcFile?.version) {
+  if (currentNodeVersion !== closestNvmrcFile.version) {
     warn(supportEmojis && "🚨", "Node version is NOT correct");
 
     return;
