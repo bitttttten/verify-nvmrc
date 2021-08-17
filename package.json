@@ -1,0 +1,13 @@
+{
+  "name": "verify-nvmrc",
+  "version": "1.0.1",
+  "description": "Finds the closest .nvmrc file and checks the currently loaded node version against that.",
+  "bin": "cli.mjs",
+  "main": "cli.mjs",
+  "scripts": {
+    "test": "echo 'none.. yet'"
+  },
+  "keywords": [],
+  "author": "bitttttten <bitttttten@googlemail.com>",
+  "license": "(MIT AND Artistic-2.0)"
+}
