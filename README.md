@@ -27,3 +27,7 @@ npx verify-nvmrc -e -v
 # ℹ️ Found .nvmrc file with v14.15.4 at /Users/bitttttten/github.com/verify-nvmrc/.nvmrc
 # Node version is correct 🎉
 ```
+
+## Caveats
+
+Kind of ironically only supports node v12 and above since this script uses ES modules (for now, feel free to open a PR). To run with node v10, you should enable support for ES modules with the `--experimental-modules` flag: `npx verify-nvmrc --experimental-modules`. For node v8 and below, feel free to open a PR until a version of the script has been written that is v8 compatible.
