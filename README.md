@@ -21,6 +21,10 @@ Supports emojis.
 
 Logs out where it found the nvmrc file, if one is present. And logs out current node version.
 
+- `-f, --fail`
+
+Process exits with code 1 if node version mismatch.
+
 ```sh
 npx verify-nvmrc -e -v
 # ℹ️ Current node version v14.15.4
