@@ -49,6 +49,7 @@ async function birdUp() {
 async function main() {
   const args = new Set(process.argv);
   const supportEmojis = args.has("-e") || args.has("--emoji");
+  const exitWithErrorCodeOnFailure = args.has("-f") || args.has("--fail");
 
   const currentNodeVersion = runCommand("node --version");
   const closestNvmrcFile = await birdUp();
@@ -74,6 +75,11 @@ async function main() {
 
   if (currentNodeVersion !== closestNvmrcFile.version) {
     warn(supportEmojis && "🚨", "Node version is NOT correct");
+
+    if (exitWithErrorCodeOnFailure) {
+      // exiting with Unix code 1 indicates error
+      process.exit(1);
+    }
 
     return;
   }
