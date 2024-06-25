@@ -1,14 +1,19 @@
 {
   "name": "verify-nvmrc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Finds the closest .nvmrc file and checks the currently loaded node version against that.",
-  "bin": "cli.mjs",
+  "bin": {
+    "verify-nvmrc": "cli.mjs"
+  },
   "main": "cli.mjs",
   "scripts": {
     "test": "echo 'none.. yet'"
   },
   "keywords": [],
   "author": "bitttttten <bitttttten@googlemail.com>",
-  "repository": "https://github.com/bitttttten/verify-nvmrc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitttttten/verify-nvmrc.git"
+  },
   "license": "(MIT AND Artistic-2.0)"
 }
