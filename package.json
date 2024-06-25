@@ -9,5 +9,6 @@
   },
   "keywords": [],
   "author": "bitttttten <bitttttten@googlemail.com>",
+  "repository": "https://github.com/bitttttten/verify-nvmrc",
   "license": "(MIT AND Artistic-2.0)"
 }
